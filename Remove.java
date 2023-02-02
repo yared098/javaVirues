@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Remove {
     public static void main(String[] args) {
-
-        File directory = new File("/home/yared/Desktop/java file");
+        String fileDrectory="";
+        File directory = new File(fileDrectory);
         List<String> vlists = new ArrayList<>();
         File[] files = directory.listFiles();
         for (File file : files) {
@@ -14,9 +14,9 @@ public class Remove {
                 vlists.add(file.getName());
             }
         }
-        System.out.print("Press 1 Scann file");
-        System.out.print("Press 2 Remove virues file ");
-        System.out.print("Enter a string : ");
+        System.out.print("Press 1 Scann  infected file");
+        System.out.print("Press 2 Remove virues  ");
+        System.out.print("Enter Operetion : ");
 
         Scanner scanner = new Scanner(System.in);
         String inputString = scanner.nextLine();

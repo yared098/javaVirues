@@ -2,8 +2,8 @@ import java.io.File;
 
 public class Virus {
     public static void main(String[] args) {
-
-        File directory = new File("/home/yared/Desktop/java file");
+         String fileDrectory="";
+        File directory = new File(fileDrectory);
         System.out.print("\n");
         File[] files = directory.listFiles();
         for (File file : files) {
